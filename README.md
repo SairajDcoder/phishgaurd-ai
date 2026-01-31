@@ -2,9 +2,6 @@
 
 > **An AI-powered, multimodal cybersecurity platform that detects, analyzes, and educates users about modern phishing threats.**
 
-![PhishGuard Banner](https://via.placeholder.com/1200x400.png?text=PhishGuard+Dashboard+Preview)
-_(Note: Replace the link above with an actual screenshot of your dashboard)_
-
 ## 💡 The Problem
 
 Traditional phishing detectors rely on **static keyword matching** (e.g., simple blacklists or looking for "urgent"). They fail against modern threats like:
