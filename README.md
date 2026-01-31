@@ -60,40 +60,41 @@ PhishGuard uses **Generative AI (Gemini 1.5)** to understand the _semantics_ and
 - MongoDB (Local instance or Atlas URL)
 - Google Gemini API Key
 
-### Steps to run the Phishgaurd AI
+### 1. Clone the Repository
 
 ```bash
 git clone [https://github.com/yourusername/PhishGuard.git](https://github.com/yourusername/PhishGuard.git)
 cd PhishGuard
 2. Backend Setup (The Brain)
-Navigate to the server directory and install dependencies:
 ```
-
+### 2. Backend Setup (The Brain)
+* Navigate to the server directory and install dependencies:
 ```bash
 cd server
 npm install
-Create a .env file in the server folder with your credentials:
 ```
 
-```bash Code snippet
+* Create a .env file in the server folder with your credentials:
+* Code snippet
+```bash
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/phishguard
 GEMINI_API_KEY=your_google_gemini_api_key_here
-Start the server:
 ```
 
+* Start the server:
 ```bash
 node index.js
 # Output should confirm: Server running on port 5000 | MongoDB Connected
-3. Frontend Setup (The Face)
-Open a new terminal window, navigate to the client directory, and install dependencies:
 ```
 
+### 3. Frontend Setup (The Face)
+* Open a new terminal window, navigate to the client directory, and install dependencies:
 ```bash
 cd client
 npm install
 npm run dev
-Access the application at http://localhost:5173.
 ```
+### Access the application at http://localhost:5173.
 
-Made with ❤️ and ☕ by [Your Name/Team Name]
+Made with ❤️ and ☕ by Sairaj
