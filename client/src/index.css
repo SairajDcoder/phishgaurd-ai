@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* 👇 THIS IS THE FIX */
+/* It tells Tailwind: "Only activate dark mode if the .dark class is found" */
+@variant dark (&:where(.dark, .dark *));
+
+/* Optional: Hide scrollbars for the clean look */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
