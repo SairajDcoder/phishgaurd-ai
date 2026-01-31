@@ -92,26 +92,4 @@ npm run dev
 Access the application at http://localhost:5173.
 ```
 
-### 🎮 How to Demo (For Judges)
-
-The Hook: Start with the Cyber Dojo. Show how the AI generates a completely fresh scam scenario to test your instincts.
-
-### The Live Scan:
-
-Option A (QR): Use the "Scan QR Code" feature with your phone or a test image.
-
-Option B (Image): Upload a screenshot of a fake "Netflix Password Reset" email.
-
-The Analysis: Show the "Analysis Breakdown" card. Point out how the AI detected subtle social engineering cues that traditional regex filters would miss.
-
-The Closing: Click the "Export Official PDF Report" button to demonstrate the business/enterprise value of the tool.
-
-### 🔮 Future Roadmap
-
-Browser Extension: Auto-scan URLs in real-time while browsing the web.
-
-Community Blacklist: A decentralized ledger of confirmed phishing domains reported by users.
-
-Voice Phishing (Vishing): Audio analysis for suspicious phone calls and voicemails.
-
 Made with ❤️ and ☕ by [Your Name/Team Name]
