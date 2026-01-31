@@ -3,56 +3,65 @@
 > **An AI-powered, multimodal cybersecurity platform that detects, analyzes, and educates users about modern phishing threats.**
 
 ![PhishGuard Banner](https://via.placeholder.com/1200x400.png?text=PhishGuard+Dashboard+Preview)
-*(Note: Replace the link above with an actual screenshot of your dashboard)*
+_(Note: Replace the link above with an actual screenshot of your dashboard)_
 
 ## 💡 The Problem
+
 Traditional phishing detectors rely on **static keyword matching** (e.g., simple blacklists or looking for "urgent"). They fail against modern threats like:
-* **Social Engineering:** Context-heavy attacks that sound polite and legitimate but are malicious.
-* **Image-Based Scams:** Threats hidden inside screenshots or graphics to bypass text filters.
-* **"Quishing" (QR Phishing):** Malicious QR codes placed on physical objects, parking meters, or emails.
+
+- **Social Engineering:** Context-heavy attacks that sound polite and legitimate but are malicious.
+- **Image-Based Scams:** Threats hidden inside screenshots or graphics to bypass text filters.
+- **"Quishing" (QR Phishing):** Malicious QR codes placed on physical objects, parking meters, or emails.
 
 ## 🚀 The Solution: PhishGuard
-PhishGuard uses **Generative AI (Gemini 1.5)** to understand the *semantics* and *context* of a threat, not just the syntax. It acts as an **Orchestration Layer** that combines OCR, Real-time Scanning, and Gamified Education into a single, comprehensive defense hub.
+
+PhishGuard uses **Generative AI (Gemini 1.5)** to understand the _semantics_ and _context_ of a threat, not just the syntax. It acts as an **Orchestration Layer** that combines OCR, Real-time Scanning, and Gamified Education into a single, comprehensive defense hub.
 
 ## ✨ Key Features
 
 ### 🕵️‍♂️ Multimodal Analysis
-* **Text & URL Scanning:** Paste suspicious emails, SMS messages, or links for instant AI analysis.
-* **Image Forensics:** Upload screenshots of chats or emails. PhishGuard extracts text (OCR) and analyzes the visual context for threat indicators.
-* **QR Code Sentinel:** Real-time camera detection for malicious QR codes (Quishing) with a safety-first confirmation step before analysis.
+
+- **Text & URL Scanning:** Paste suspicious emails, SMS messages, or links for instant AI analysis.
+- **Image Forensics:** Upload screenshots of chats or emails. PhishGuard extracts text (OCR) and analyzes the visual context for threat indicators.
+- **QR Code Sentinel:** Real-time camera detection for malicious QR codes (Quishing) with a safety-first confirmation step before analysis.
 
 ### 🧠 Semantic Intelligence
-* **Contextual Verdicts:** Doesn't just say "Safe" or "Unsafe"—it explains *why* (e.g., "The sender domain mimics PayPal but uses a Cyrillic 'a', and the urgency is artificial").
-* **Confidence Scoring:** A visual risk meter showing the AI's certainty level regarding the threat.
+
+- **Contextual Verdicts:** Doesn't just say "Safe" or "Unsafe"—it explains _why_ (e.g., "The sender domain mimics PayPal but uses a Cyrillic 'a', and the urgency is artificial").
+- **Confidence Scoring:** A visual risk meter showing the AI's certainty level regarding the threat.
 
 ### 🎓 Cyber Dojo (Gamified Training)
-* **AI-Generated Scenarios:** An infinite training mode where the AI invents unique, fresh phishing simulations on the fly.
-* **Smart Shuffling:** Algorithms ensure a mix of difficulty levels and threat types (SMS, Email, Pop-ups) to keep users challenged.
+
+- **AI-Generated Scenarios:** An infinite training mode where the AI invents unique, fresh phishing simulations on the fly.
+- **Smart Shuffling:** Algorithms ensure a mix of difficulty levels and threat types (SMS, Email, Pop-ups) to keep users challenged.
 
 ### 💼 Enterprise Reporting
-* **PDF Exports:** Generates professional, timestamped security audit reports with "PhishGuard Certified" stamping for documentation.
-* **Live Audit Log:** Interactive history panel tracking the last 50 scans, allowing users to reload and review past threats.
+
+- **PDF Exports:** Generates professional, timestamped security audit reports with "PhishGuard Certified" stamping for documentation.
+- **Live Audit Log:** Interactive history panel tracking the last 50 scans, allowing users to reload and review past threats.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React.js, Tailwind CSS, Vite
-* **Backend:** Node.js, Express.js
-* **AI Engine:** Google Gemini API (Generative AI)
-* **Database:** MongoDB (for audit logs & stats)
-* **Utilities:** `html5-qrcode` (Scanner), `jspdf` (Reports), `multer` (File Handling)
+- **Frontend:** React.js, Tailwind CSS, Vite
+- **Backend:** Node.js, Express.js
+- **AI Engine:** Google Gemini API (Generative AI)
+- **Database:** MongoDB (for audit logs & stats)
+- **Utilities:** `html5-qrcode` (Scanner), `jspdf` (Reports), `multer` (File Handling)
 
 ---
 
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
-* Node.js (v16+)
-* MongoDB (Local instance or Atlas URL)
-* Google Gemini API Key
+
+- Node.js (v16+)
+- MongoDB (Local instance or Atlas URL)
+- Google Gemini API Key
 
 ### 1. Clone the Repository
+
 ```bash
 git clone [https://github.com/yourusername/PhishGuard.git](https://github.com/yourusername/PhishGuard.git)
 cd PhishGuard
@@ -83,10 +92,11 @@ npm run dev
 Access the application at http://localhost:5173.
 ```
 
-🎮 How to Demo (For Judges)
+### 🎮 How to Demo (For Judges)
+
 The Hook: Start with the Cyber Dojo. Show how the AI generates a completely fresh scam scenario to test your instincts.
 
-The Live Scan:
+### The Live Scan:
 
 Option A (QR): Use the "Scan QR Code" feature with your phone or a test image.
 
@@ -96,7 +106,8 @@ The Analysis: Show the "Analysis Breakdown" card. Point out how the AI detected 
 
 The Closing: Click the "Export Official PDF Report" button to demonstrate the business/enterprise value of the tool.
 
-🔮 Future Roadmap
+### 🔮 Future Roadmap
+
 Browser Extension: Auto-scan URLs in real-time while browsing the web.
 
 Community Blacklist: A decentralized ledger of confirmed phishing domains reported by users.
