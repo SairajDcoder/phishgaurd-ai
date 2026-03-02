@@ -2,9 +2,6 @@
 
 > **An AI-powered, multimodal cybersecurity platform that detects, analyzes, and educates users about modern phishing threats.**
 
-![PhishGuard Banner](https://via.placeholder.com/1200x400.png?text=PhishGuard+Dashboard+Preview)
-_(Note: Replace the link above with an actual screenshot of your dashboard)_
-
 ## 💡 The Problem
 
 Traditional phishing detectors rely on **static keyword matching** (e.g., simple blacklists or looking for "urgent"). They fail against modern threats like:
@@ -66,52 +63,35 @@ PhishGuard uses **Generative AI (Gemini 1.5)** to understand the _semantics_ and
 git clone [https://github.com/yourusername/PhishGuard.git](https://github.com/yourusername/PhishGuard.git)
 cd PhishGuard
 2. Backend Setup (The Brain)
-Navigate to the server directory and install dependencies:
-
-Bash
+```
+### 2. Backend Setup (The Brain)
+* Navigate to the server directory and install dependencies:
+```bash
 cd server
 npm install
-Create a .env file in the server folder with your credentials:
+```
 
-Code snippet
+* Create a .env file in the server folder with your credentials:
+* Code snippet
+```bash
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/phishguard
 GEMINI_API_KEY=your_google_gemini_api_key_here
-Start the server:
+```
 
-Bash
+* Start the server:
+```bash
 node index.js
 # Output should confirm: Server running on port 5000 | MongoDB Connected
-3. Frontend Setup (The Face)
-Open a new terminal window, navigate to the client directory, and install dependencies:
+```
 
-Bash
+### 3. Frontend Setup (The Face)
+* Open a new terminal window, navigate to the client directory, and install dependencies:
+```bash
 cd client
 npm install
 npm run dev
-Access the application at http://localhost:5173.
 ```
+### Access the application at http://localhost:5173.
 
-### 🎮 How to Demo (For Judges)
-
-The Hook: Start with the Cyber Dojo. Show how the AI generates a completely fresh scam scenario to test your instincts.
-
-### The Live Scan:
-
-Option A (QR): Use the "Scan QR Code" feature with your phone or a test image.
-
-Option B (Image): Upload a screenshot of a fake "Netflix Password Reset" email.
-
-The Analysis: Show the "Analysis Breakdown" card. Point out how the AI detected subtle social engineering cues that traditional regex filters would miss.
-
-The Closing: Click the "Export Official PDF Report" button to demonstrate the business/enterprise value of the tool.
-
-### 🔮 Future Roadmap
-
-Browser Extension: Auto-scan URLs in real-time while browsing the web.
-
-Community Blacklist: A decentralized ledger of confirmed phishing domains reported by users.
-
-Voice Phishing (Vishing): Audio analysis for suspicious phone calls and voicemails.
-
-Made with ❤️ and ☕ by [Your Name/Team Name]
+Made with ❤️ and ☕ by Sairaj
