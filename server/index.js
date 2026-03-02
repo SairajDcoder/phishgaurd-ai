@@ -26,7 +26,7 @@ const upload = multer({ dest: 'uploads/' });
 
 // Database Connection
 mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/phishguard')
-    .then(() => console.log("✅ MongoDB Connected"))
+    .then(() => console.log("✅ MongoDB Connected successfully"))
     .catch(err => console.error("❌ MongoDB Error:", err));
 
 const ScanSchema = new mongoose.Schema({
